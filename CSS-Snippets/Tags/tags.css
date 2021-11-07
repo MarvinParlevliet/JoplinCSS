@@ -11,7 +11,6 @@
   }
   
    tag {
-     /* background-color: lightcoral; */
      border: 2px solid white; /* Puts border around tag (default: 2px solid white) */
      box-shadow: 0em 0em 0.5em 0em black; /* Shadow to make tag appear in light mode themes (default: 0em 0em 0.5em 0em black) */
      border-radius: 0.5em; /* Rounds border (default: 0.5em) */
