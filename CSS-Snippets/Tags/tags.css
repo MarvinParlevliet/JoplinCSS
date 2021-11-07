@@ -1,0 +1,31 @@
+/*
+ *  Tag View Snippet for Joplin by Marvin Parlevliet
+ *  Read README.md for instructions on how to modify Tag View to your needs (Great for those new to CSS!)
+ */
+
+ tagview {
+    margin-top: 3em; /* Leaves blank space between the top of wherever tags are inserted (default: 3em) */
+    display: flex; /* Responsible for showing all <tag> elements next to each other, as opposed to underneath (default: flex) */
+    flex-wrap: wrap; /* Wraps tags when screen overflows (default: wrap) */
+    align-items: center; /* Aligns items (eg text inside tagview) to center horizontally (default: center) */
+  }
+  
+   tag {
+     /* background-color: lightcoral; */
+     border: 2px solid white; /* Puts border around tag (default: 2px solid white) */
+     box-shadow: 0em 0em 0.5em 0em black; /* Shadow to make tag appear in light mode themes (default: 0em 0em 0.5em 0em black) */
+     border-radius: 0.5em; /* Rounds border (default: 0.5em) */
+     padding: 0.5em 1em; /* Adjust padding (space between text and border) (default: 0.5em 1em) */
+     margin: 0.5em; /* Adjust space between tags (default: 0.5em) */
+   }
+  
+   @media print { /* Everything within this tag is only applicable to print and PDF */
+  
+    tagview {
+      margin-top: 2em; /* (default: 2em) */
+    }
+  
+     tag {
+       border: 2px solid black; /* (default: 2px solid black) */
+     }
+    }
